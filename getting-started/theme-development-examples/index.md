@@ -8,7 +8,7 @@ One of the best ways to understand theme coding standards is to find examples of
 ## デフォルトテーマ "Twenty"
 
 Packaged in every version of WordPress since version 3.0 (and named after the year they were released in), the default themes are some of the best to study how themes are built. This is because they are designed with broad use in mind and fully adhere to WordPress coding standards. You can download and study their theme files, and keep them around as examples to reference while learning how to develop your own themes:  
-バージョン3.0以降のすべてのバージョンのWordPressに同梱されています（リリースされた年の後に名前が付けられています）。これらは幅広い使い方を念頭に置いて設計されており、WordPressのコーディング標準に完全に準拠しているためテーマの構築方法を調べるのに最適です。テーマファイルをダウンロードしてテーマを作成する方法を学びながら参考にすることができます。
+バージョン3.0以降のすべてのバージョンのWordPressに同梱されています（リリースされた年の後に名前が付けられています）。これらは幅広い使い方を念頭に置いて設計されており、WordPressのコーディング標準に準拠しているためテーマの構築方法を調べるのに最適です。テーマファイルをダウンロードしてテーマ開発の方法を学びながら参考にすることができます。
 
 - [Twenty Seventeen](https://core.trac.wordpress.org/browser/trunk/src/wp-content/themes/twentyseventeen)
 - [Twenty Sixteen (only packaged in WordPress 4.8)](https://core.trac.wordpress.org/browser/trunk/src/wp-content/themes/twentysixteen)
@@ -22,7 +22,9 @@ Packaged in every version of WordPress since version 3.0 (and named after the ye
 ## The Underscores theme
 ## Underscores theme
 Unlike the default “Twenties” themes, the _s (or Underscores) theme is aimed at developers rather than end-users. It is intended to be a starter theme which you can use as a base to speed your development. It has a number of features:  
-デフォルトの「Twenties」テーマとは異なり、_s（またはUnderscores）テーマはエンドユーザーではなく開発者を対象としています。 これは、開発のスピードを上げるための基礎として使用できるスターターテーマであることを意図しています。 多くの機能があります
+デフォルトの「Twenties」テーマとは異なり、_s（またはUnderscores）テーマはエンドユーザーではなく開発者を対象としています。 これは、開発のスピードを上げるための基礎として使用できるスターターテーマであることを意図しています。
+
+下記のように多くの機能があります。
 
 - Well-commented HTML5 templates, including error templates.  
 よくコメントされたHTML5テンプレート（エラーテンプレートを含む）。
@@ -36,3 +38,18 @@ js/navigation.js内の画面ナビゲーションだけではなく、js/keyboar
 /layoutsの5つのサンプルCSSと、ビルドするためのCSSスターター。
 - GPL-licensed code.  
 GPLライセンスコード
+
+The features above make Underscores a great theme for a developer wanting to create their own theme. And even if you remove the extras, the base that’s left is a still an excellent example of a well-coded theme, developed with standards and best-practices in mind.
+アンダースコアは上記の機能により独自のテーマを作成したい開発者にとって大きなテーマになります。またエキストラを削除しても、残っているベースは標準とベストプラクティスを念頭に置いて開発された、きちんとコード化されたテーマの優れた例です。
+
+A more detailed overview is available on Underscores’ website.
+[Underscoresのウェブサイト](http://underscores.me/)でより詳細な概要をご覧いただけます。
+
+Code for Underscores may be found at github.
+[アンダースコアのコードはgithubでご覧いただけます。](https://github.com/Automattic/_s/)
+
+## Other Sources
+## 他のソース
+
+Additionally, all themes published in the theme directory are reviewed for standards prior to being published. Reviewing themes in the directory is a great way to better understand how theme development works and is a good way to get inspiration for your own theme.
+テーマディレクトリに公開されている全てのテーマは、公開される前にコーディング標準に基づきレビューされます。テーマディレクトリ内のテーマを確認することは、テーマ開発の仕組みをよりよく理解するうえで非常に役立ち、自分のテーマ開発にインスピレーションを与える良い方法です。

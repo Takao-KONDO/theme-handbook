@@ -37,16 +37,16 @@ js/navigation.js内の画面ナビゲーションだけではなく、js/keyboar
 - Five sample CSS layouts in /layouts as well as starter CSS on which to build your design.  
 /layoutsの5つのサンプルCSSと、ビルドするためのCSSスターター。
 - GPL-licensed code.  
-GPLライセンスコード
+GPLライセンス規約
 
 The features above make Underscores a great theme for a developer wanting to create their own theme. And even if you remove the extras, the base that’s left is a still an excellent example of a well-coded theme, developed with standards and best-practices in mind.
-アンダースコアは上記の機能により独自のテーマを作成したい開発者にとって大きなテーマになります。またエキストラを削除しても、残っているベースは標準とベストプラクティスを念頭に置いて開発された、きちんとコード化されたテーマの優れた例です。
+Underscoresは上記の機能により独自のテーマを作成したい開発者にとって大きなテーマになります。またエキストラを削除しても、残っているベースは標準とベストプラクティスを念頭に置いて開発された、きちんとコード化されたテーマの優れた例です。
 
 A more detailed overview is available on Underscores’ website.
 [Underscoresのウェブサイト](http://underscores.me/)でより詳細な概要をご覧いただけます。
 
 Code for Underscores may be found at github.
-[アンダースコアのコードはgithubでご覧いただけます。](https://github.com/Automattic/_s/)
+[Underscoresのコードはgithubでご覧いただけます。](https://github.com/Automattic/_s/)
 
 ## Other Sources
 ## 他のソース

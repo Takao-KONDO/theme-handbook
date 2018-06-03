@@ -221,7 +221,7 @@ If you are building a theme designed for multiple authors, it might make sense t
 
 Additionally, you can build specific author.php files for individual author’s by using their author ID or nicename. For example, say John Doe is the head author for a site with many guest authors. You may want all the guest authors’ information to display with author.php but you might build a specific author page with more information for John Doe by creating author-johndoe.php or author-3.php if his author ID is 3.
 
-さらに、作成者IDまたはナイスネーム (nicename) を使用して、個々の作成者のための特定の author.php ファイルを作成することもできます。たとえば、John Doe は多くのゲストの著者がいるサイトのトップの編集者です。もし、すべてのゲストの著者の情報を author.php で表示したいとすれば、著者IDが3ならauthor-johndoe.phpまたはauthor-3.phpを作成してJohn Doeの詳細情報を含む特定の著者ページを作成できます。
+さらに、作成者IDまたはナイスネーム (nicename) を使用して、個々の作成者のための特定の author.php ファイルを作成することもできます。たとえば、John Doe は多くのゲストの投稿作成者がいるサイトのトップの作成者です。もし、すべてのゲストの作成者の情報を author.php で表示したいとすれば、それに対し John Doe の詳細情報を含む特定の作成者ページを作成するには、作成者IDが3なら、author-johndoe.php または author-3.php を作成すればよいことになります。
 
 Top ↑
 

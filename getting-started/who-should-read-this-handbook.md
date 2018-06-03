@@ -17,14 +17,21 @@ The Theme Developer Handbook is a self-contained resource to help you learn the 
 ## Your skill level
 ## あなたの秘術レベル
 
-To get the most out of this handbook, you should have an understanding and some experience with web technologies, such as HTML, CSS, and PHP. You should also be comfortable with setting up and configuring websites using WordPress.
+To get the most out of this handbook, you should have an understanding and some experience with web technologies, such as HTML, CSS, and PHP.
+このハンドブックを最大限活用するには、HTML、CSS、PHPといったウェブ技術のある程度の理解と経験.
+You should also be comfortable with setting up and configuring websites using WordPress.
+WordPressを使用してウェブサイトを構築できる。
 
 > Note: An understanding of how MySQL databases work, as well as server technologies in general, is helpful but not a requirement for developing WordPress themes. Likewise, while JavaScript knowledge can be useful, it is not required
+> Note: MySQLがどのように動作するか、一般的なサーバー技術の知識があるとより理解しやすいですが、テーマの開発においては必須ではありません。
+同様に, JavaScriptの知識もあると有用ですが, 必須ではありません。
 
 
-## What this handbook will cover #
+## What this handbook will cover
+## このハンドブックで扱う内容
 
 This handbook provides the basic information required to develop WordPress themes, including in-depth coverage of essential template tags and functions.
+このハンドブックはWordPressのテーマ開発に必要となる重要なテンプレートタグと関数を含む基本的な情報を扱っています。
 
 WordPress is a vast subject. Covering every possible tag, function, and scenario is beyond the scope of this handbook. If you need help with specific functions, you can find that information in the code [reference](https://developer.wordpress.org/reference).
 

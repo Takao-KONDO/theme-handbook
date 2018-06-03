@@ -8,7 +8,7 @@ One of the best ways to understand theme coding standards is to find examples of
 ## デフォルトテーマ "Twenty"
 
 Packaged in every version of WordPress since version 3.0 (and named after the year they were released in), the default themes are some of the best to study how themes are built. This is because they are designed with broad use in mind and fully adhere to WordPress coding standards. You can download and study their theme files, and keep them around as examples to reference while learning how to develop your own themes:  
-バージョン3.0以降のすべてのバージョンのWordPressにパッケージ化されています（リリースされた年の後に名前が付けられています）。これらは幅広い使い方を念頭に置いて設計されており、WordPressのコーディング標準に完全に準拠しているためテーマの構築方法を調べるのに最適です。テーマファイルをダウンロードしてテーマを作成する方法を学びながら参考にすることができます。
+バージョン3.0以降のすべてのバージョンのWordPressに同梱されています（リリースされた年の後に名前が付けられています）。これらは幅広い使い方を念頭に置いて設計されており、WordPressのコーディング標準に完全に準拠しているためテーマの構築方法を調べるのに最適です。テーマファイルをダウンロードしてテーマを作成する方法を学びながら参考にすることができます。
 
 - [Twenty Seventeen](https://core.trac.wordpress.org/browser/trunk/src/wp-content/themes/twentyseventeen)
 - [Twenty Sixteen (only packaged in WordPress 4.8)](https://core.trac.wordpress.org/browser/trunk/src/wp-content/themes/twentysixteen)

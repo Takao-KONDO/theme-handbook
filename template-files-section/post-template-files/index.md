@@ -138,12 +138,14 @@ get_header(); ?>
 
 In the code example above you can see the header is pulled in with get_header() then there are a two html tags. Next the Loop starts and the template tag get_template_part( 'content', get_post_format()); pulls in the appropriate content by determining the post type with get_post_format(). Next, comments are pulled in with the template tag comments_template(). Then there is some pagination. Lastly, the content divs are closed and then footer is pulled in with get_footer().
 
-上のコード例では、ヘッダーが get_header() で読み込まれ、次に2つの HTML タグがあることが分かります。次にループが始まり、テンプレートタグget_template_part( 'content', get_post_format()); が、get_post_format() で投稿タイプを決定することにで、適切なコンテンツを取得します。その次に、テンプレートタグ comments_template() を使用して、コメントを取得します。その後、ページネーションがあります。最後に、コンテンツの div が閉じられてから、フッターが get_footer() で読み込まれます。
+上のコード例では、ヘッダーが get_header() で読み込まれ、次に2つの HTML タグがあることが分かります。次にループが始まり、テンプレートタグ  get_template_part( 'content', get_post_format()); が、get_post_format() で投稿タイプを決定することにで、適切なコンテンツを取得します。その次に、テンプレートタグ comments_template() を使用して、コメントを取得します。その後、ページネーションがあります。最後に、コンテンツの div が閉じられてから、フッターが get_footer() で読み込まれます。
 
 Top ↑
 
 Singular.php #Singular.php
 WordPress Version 4.3 added singular.php that comes in the hierarchy after single.php for posts, page.php for pages, and the variations of each. This template follows the rules of is_singular() and is used for a single post, regardless of post type. Themes that used the same code for both of those files (or included one in the other) can now simplify down to the one template.
+
+WordPress のバージョン 4.3 では、singular.php が追加されましたが、これは、階層構造の中で、投稿 (post 投稿タイプ) では single.php の後に、固定ページでは page.php の後に来るもので、それぞれのバリエーションです。このテンプレートはis_singular（）の規則に従い、投稿タイプにかかわらず単一の投稿に使用されます。 これらのファイルの両方に同じコードを使用したテーマ（または別のものを含む）は、今では1つのテンプレートに単純化できます。
 
 Top ↑
 

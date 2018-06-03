@@ -217,30 +217,49 @@ author.php と date.php は、より特定的なアーカイブタイプのフ�
 
 If you are building a theme designed for multiple authors, it might make sense to build an author.php template. In the author.php template you could provide more information about an author, their gravatar, pull in their social media sites, and then all posts written by them. This would be a step up from relying just on the archive.php file.
 
-複数の投稿作成者のために設計されたテーマを作る場合は、author.php テンプレートを作成することが理にかなっています。author.php テンプレートでは、作成者についてのより詳しい情報、グラバター（ gravatar ）、彼らのソーシャルメディアサイトを表示しつつ、彼らによって書かれたすべての投稿を提供することができます。これは archive.php ファイルだけによる場合と比べて一つの進歩でしょう。
+複数の投稿作成者のために設計されたテーマを構築する場合は、author.php テンプレートを作成することが理にかなっています。author.php テンプレートでは、作成者についてのより詳しい情報、グラバター（ gravatar ）、彼らのソーシャルメディアサイトを表示しつつ、彼らによって書かれたすべての投稿を提供することができます。これは archive.php ファイルだけによる場合と比べて一つの進歩でしょう。
 
 Additionally, you can build specific author.php files for individual author’s by using their author ID or nicename. For example, say John Doe is the head author for a site with many guest authors. You may want all the guest authors’ information to display with author.php but you might build a specific author page with more information for John Doe by creating author-johndoe.php or author-3.php if his author ID is 3.
 
-さらに、作成者IDまたはナイスネーム (nicename) を使用して、個々の作成者のための特定の author.php ファイルを作成することもできます。たとえば、John Doe は多くのゲストの投稿作成者がいるサイトのトップの作成者です。もし、すべてのゲストの作成者の情報を author.php で表示したいとすれば、それに対し John Doe の詳細情報を含む特定の作成者ページを作成するには、作成者IDが3なら、author-johndoe.php または author-3.php を作成すればよいことになります。
+さらに、作成者IDまたはナイスネーム (nicename) を使用して、個々の作成者のための特定の author.php ファイルを作成することもできます。たとえば、John Doe 氏が多くのゲストの投稿作成者がいるサイトの最上位の作成者だとします。そこでもし、すべてのゲストの作成者の情報を author.php で表示したいものとすれば、それに対し John Doe 氏の詳細情報を含む特定の作成者ページを作成するには、author-johndoe.php を、または、作成者IDが3だとすれば author-3.php を作成すればよいことになります。
 
 Top ↑
 
-Date.php #Date.php
+###Date.php #Date.php
+
+###date.php
+
 Similarly, if you are building a theme directed at magazine or news websites, a date.php file might make sense to build as these websites frequently organize their articles and posts by date or issue. Additionally, you could build a day.php, month.php, or year.php if you found enough justification for it.
 
+同様に、雑誌やニュースのウェブサイト向けのテーマを構築している場合、これらのウェブサイトは、しばしば記事や投稿を日付や問題別に整理しますが、date.php は、その構築の際に理にかなっています。さらに、十分な正当性が確認された場合は、day.php、month.php、または year.php を作成することもできます。
+
 Top ↑
 
-Category.php, Tag.php, and Taxonomy.php #Category.php, Tag.php, and Taxonomy.php
+##Category.php, Tag.php, and Taxonomy.php #Category.php, Tag.php, and Taxonomy.php
+
+##category.php、 tag.php と taxonomy.php
+
 If you need a refresher on what categories, tags, & taxonomies are you can look at their page. Often you won’t need to build out these template files. However, in an example of building a theme for food bloggers, there are some use cases for building these specific templates. In a food blogger website, the categories could be Great Restaurants, Beautiful Food, Ethnic Cuisine, and Recipes.
+
+もし、カテゴリーやタグ、タクソノミーが何であるのか思い出したい場合は、それらのページを見ることができます。 しばしば、これらのテンプレートファイルを構築することは不必要です。しかしながら、フードブロガーのテーマを構築する例では、これらの特定的なテンプレートを構築するのに向いた使用ケースがいくつかあります。フードブロガーのウェブサイトでは、カテゴリーは、「素晴らしいレストラン」「美食」「エスニック料理」「レシピ」になりえます。
 
 You might want most of your blog posts to display the same way except for any blogs that are categorized as recipes, because all recipes have ingredients and instrucitons sections. Therefore, you may want to build a category-recipe.php file to display your recipe blog posts in a grid view with some of the important details about the recipe visible.
 
+ブログの投稿の大部分を同じ方法で表示したいのに、「レシピ」のカテゴリーのブログだけはそうはいかない、なぜならレシピはすべて食材と手順説明のセクションがあるから、ということがあるかもしれません。そこで、レシピのブログ記事をグリッド表示に並べ、各レシピの重要な詳細のいくつかをその中に表示するために、category-recipe.php ファイルを作成することができます。
+
 Additionally, perhaps chocolate is a really important tag for the theme you’re building. It might make sense to build a tag-chocolate.php file so that you can display a specialized banner image of chocolate.
+
+さらに、もしかすると「チョコレート」はあなたが構築しているテーマにとって本当に重要なタグかもしれません。その場合は、tag-chocolate.php ファイルを作成して、チョコレートの特別なバナー画像を表示できるようにするとよいかもしれません。
 
 Top ↑
 
-Search.php #Search.php
+##Search.php #Search.php
+
+##search.php
+
 Most themes have a search.php file so it is clear to users that their query went through. It is common to have some sort of header identifying the query results such as this snippet found int twenty fifteen’s theme.
+
+ほとんどのテーマには search.php ファイルがあり、そのお陰でユーザーにクエリーが完了したことが分かります。ヘッダーには、どんなクエリーの結果かを識別する、以下に示す Twenty Fifteen テーマ内のスニペットのような何かがあるのが一般的です。
 
 1
 2
@@ -262,6 +281,9 @@ Most themes have a search.php file so it is clear to users that their query went
  
  
 <!-- .page-header -->
+
 This code snippet pulls in the query that was searched with get_search_query(). Often search.php will only pull in the excerpt instead of the full content since the user is trying to determine if the article or page fits their search.
+
+このコードスニペットは、get_search_query() で検索されたクエリーを取得します。search.php では、ユーザーは記事やページが検索に合っているかどうかを判断しようとしているため、多くの場合、完全なコンテンツではなく抜粋のみを抽出します。
 
  

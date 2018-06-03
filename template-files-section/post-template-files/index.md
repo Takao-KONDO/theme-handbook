@@ -1,18 +1,39 @@
+#Post Template Files
+
+#投稿 (post 投稿タイプ) 用のテンプレートファイル
+
 There are many template files that WordPress uses to display the Post post type. Any content dealing with a blog or its posts are within the Post post type.
 
-Index.php #Index.php
+WordPress が投稿 (post 投稿タイプ) を表示するために使用するテンプレートファイルはたくさんあります。ブログまたはその投稿を扱うコンテンツは、post 投稿タイプに含まれます。
+
+##Index.php #Index.php
+
+##index.php
+
 index.php will display Post post types if there is no other template file in place. As stated in many places, every theme must have an index.php file to be valid. Many basic themes can get away with just using the index.php to display their Post post types, but the use cases given above would justify creating other template files.
+
+index.php は、他のテンプレートファイルがない場合、post 投稿タイプを表示します。 多くの場所で述べられているように、すべてのテーマに、有効な index.php ファイルが必要です。 多くの基本テーマでは、post タイプを表示するために index.php だけが使用されうるのではありませんが、先に述べた使用ケースがあることで、他のテンプレートファイルを作成することが正当化されるでしょう。
 
 Often you will want unique content structure or layout depending on what is being displayed. There are many templates you can use to customize content structure based on the context within the site. The two most notable post template files are home.php and single.php which display a feed of posts and a single post respectively.
 
+表示される内容が何かに応じて、独自のコンテンツ構造やレイアウトが必要になることがよくあります。 サイト内のコンテキストに基づいてコンテンツ構造をカスタマイズするために使用できるテンプレートが、たくさんあります。 最も注目すべき投稿テンプレートファイルは home.php と single.php の2つで、それぞれ投稿のフィードと個別の投稿を表示します。
+
 Top ↑
 
-Home.php #Home.php
+##Home.php #Home.php
+
+##home.php
+
 When a static front page is used and the site has a page defined for the blog list the home.php file is used for the designated blog list page. Use of this template is encouraged over creating a custom page template because blog pagination on a custom page template will not work properly. If there is no home.php in the theme index.php will be used instead.
 
+フロントページとして静的なページが使用され、かつブログの一覧用に定義されたページがある場合、home.php ファイルが、指定されたブログ一覧ページに使用されます。 カスタムページテンプレートではブログのページングが正しく機能しないため、カスタムページテンプレートを作成するより、このテンプレートを使用することをお勧めします。 テーマに home.php がない場合、代わりに index.php が使用されます。
+
 Top ↑
 
-Single.php #Single.php
+##Single.php #Single.php
+
+##single.php
+
 It’s good sense to build as simply as possible in your template structure and not make more templates unless you have real need for them. Therefore, most theme developers don’t create a single-post.php file because single.php is specific enough. For the most part, all themes should have a single.php. Below is an example of a single.php file from the theme Twenty Fifteen.
 
 1

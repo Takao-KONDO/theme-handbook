@@ -36,6 +36,9 @@ Top ↑
 
 It’s good sense to build as simply as possible in your template structure and not make more templates unless you have real need for them. Therefore, most theme developers don’t create a single-post.php file because single.php is specific enough. For the most part, all themes should have a single.php. Below is an example of a single.php file from the theme Twenty Fifteen.
 
+テンプレート構造をなるべく簡潔にし、本当に必要な分以上のテンプレートを作成しないのは良い考えです。ですので、ほとんどのテーマ開発者は、single.php が十分に特定的であるため、single-post.php ファイルを作成しません。 通例、すべてのテーマに single.php が必要です。 以下は、テーマ Twenty Fifteen の single.php ファイルの例です。
+
+
 1
 2
 3
@@ -132,9 +135,10 @@ get_header(); ?>
     </div><!-- .content-area -->
  
 <?php get_footer(); ?>
-Collapse full source code
 
 In the code example above you can see the header is pulled in with get_header() then there are a two html tags. Next the Loop starts and the template tag get_template_part( 'content', get_post_format()); pulls in the appropriate content by determining the post type with get_post_format(). Next, comments are pulled in with the template tag comments_template(). Then there is some pagination. Lastly, the content divs are closed and then footer is pulled in with get_footer().
+
+上のコード例では、ヘッダーが get_header() で読み込まれ、次に2つの HTML タグがあることが分かります。次にループが始まり、テンプレートタグget_template_part( 'content', get_post_format()); が、get_post_format() で投稿タイプを決定することにで、適切なコンテンツを取得します。その次に、テンプレートタグ comments_template() を使用して、コメントを取得します。その後、ページネーションがあります。最後に、コンテンツの div が閉じられてから、フッターが get_footer() で読み込まれます。
 
 Top ↑
 

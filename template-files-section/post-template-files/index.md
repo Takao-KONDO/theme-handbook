@@ -16,7 +16,7 @@ index.php は、他のテンプレートファイルがない場合、post 投�
 
 Often you will want unique content structure or layout depending on what is being displayed. There are many templates you can use to customize content structure based on the context within the site. The two most notable post template files are home.php and single.php which display a feed of posts and a single post respectively.
 
-表示される内容が何かに応じて、独自のコンテンツ構造やレイアウトが必要になることがよくあります。 サイト内のコンテキストに基づいてコンテンツ構造をカスタマイズするために使用できるテンプレートが、たくさんあります。 最も注目すべき投稿テンプレートファイルは home.php と single.php の2つで、それぞれ投稿のフィードと個別の投稿を表示します。
+表示される内容が何であるかに応じて、独自のコンテンツ構造やレイアウトが必要になることがよくあります。 サイト内のコンテキストに基づいてコンテンツ構造をカスタマイズするために使用できるテンプレートが、たくさんあります。 最も注目すべき投稿テンプレートファイルは home.php と single.php の2つで、それぞれ投稿のフィードと個別の投稿を表示します。
 
 Top ↑
 
@@ -145,14 +145,21 @@ Top ↑
 Singular.php #Singular.php
 WordPress Version 4.3 added singular.php that comes in the hierarchy after single.php for posts, page.php for pages, and the variations of each. This template follows the rules of is_singular() and is used for a single post, regardless of post type. Themes that used the same code for both of those files (or included one in the other) can now simplify down to the one template.
 
-WordPress のバージョン 4.3 では、singular.php が追加されましたが、これは、階層構造の中で、投稿 (post 投稿タイプ) では single.php の後に、固定ページでは page.php の後に来るもので、それぞれのバリエーションです。このテンプレートはis_singular（）の規則に従い、投稿タイプにかかわらず単一の投稿に使用されます。 これらのファイルの両方に同じコードを使用したテーマ（または別のものを含む）は、今では1つのテンプレートに単純化できます。
+WordPress のバージョン 4.3 では、singular.php が追加されましたが、これは、階層構造の中で、投稿 (post 投稿タイプ) では single.php の後に、固定ページでは page.php の後に来るものであり、それぞれのバリエーションです。このテンプレートは is_singular() の規則に従い、投稿タイプの種別にかかわらず単一の投稿に使用されます。 これらのファイルの両方に同じコードを使用したテーマ（または一方を他方にインクルードしたもの）は、今では1つのテンプレートに単純化できます。
 
 Top ↑
 
-Archive.php #Archive.php
+##Archive.php #Archive.php
+
+##archive.php
+
 Unless a developer includes meta data with permalinks in their templates, the archive.php will not be used. Meta data is information tied to the post. For example the date something was posted on, the author, and any categories, tags, or taxonomies used for the post are all examples of meta data. When a visitor to a website clicks on the meta data, the archive.php will render any posts associated with that piece of meta data. For example, if a visitor clicks on the name of an author, the archive.php will display all posts by that author.
 
+開発者がテンプレートに、パーマリンクを伴うメタデータを含めるのでない限り、archive.php は使われないでしょう。メタデータとは、投稿に結び付けられた情報です。たとえば、投稿された日付、投稿の作成者、投稿に使用されたカテゴリー、タグ、タクソノミーなどは、すべてメタデータの例です。ウェブサイトの訪問者がメタデータをクリックすると、archive.php はそのメタデータの一部に関連する投稿を表示します。たとえば、訪問者が作成者の名前をクリックすると、archive.php は、その著者によるすべての投稿を表示します。
+
 Commonly, the title of the page being displayed by archive.php will be the name of the meta data the user clicked on. So if the user clicked on the Author’s name, the page name displaying all the other author’s posts will be the Author’s name and frequently there might be an additional description about the meta data. Here is a code example from Twenty Fifteen on their achive.php file. This snippet is the only piece of code that makes the archive.php file different from a home.php or index.php file.
+
+一般に、archive.php によって表示されるページのタイトルは、ユーザーがクリックしたメタデータの名前になります。したがって、ユーザーが作成者の名前をクリックすると、当該作成者のその他のすべての投稿を表示するページ名として作成者の名前が表示され、そこにはしばしばメタデータに関する追加の説明がある可能性があります。 ここでは、achive.php ファイルの Twenty Fifteen のコード例を示します。このスニペットは、archive.php ファイルを home.php ファイルまたは index.php ファイルと異なるようにする唯一のコードです。
 
 1
 2
@@ -192,17 +199,29 @@ Commonly, the title of the page being displayed by archive.php will be the name 
  
  
 <!-- .page-header -->
-Collapse full source code
 
 Top ↑
 
-Author.php and Date.php #Author.php and Date.php
+##Author.php and Date.php #Author.php and Date.php
+
+##author.php and date.php
+
 Author.php and date.php are more specific archive type files. If you need a refresher check out where they fit within the template heirarchy. Generally, archive.php will suffice for most themes’ needs and you won’t need to create these templates.
 
-Author.php #Author.php
+author.php と date.php は、より特定的なアーカイブタイプのファイルです。そう述べる意図が分からない場合は、これらがテンプレート階層内のどこに収まるのか確認してください。一般的に、archive.php は、ほとんどのテーマのニーズに十分であり、これらのテンプレートを作成する必要はありません。
+
+
+###Author.php #Author.php
+
+###author.php
+
 If you are building a theme designed for multiple authors, it might make sense to build an author.php template. In the author.php template you could provide more information about an author, their gravatar, pull in their social media sites, and then all posts written by them. This would be a step up from relying just on the archive.php file.
 
+複数の投稿作成者のために設計されたテーマを作る場合は、author.php テンプレートを作成することが理にかなっています。author.php テンプレートでは、作成者についてのより詳しい情報、グラバター（ gravatar ）、彼らのソーシャルメディアサイトを表示しつつ、彼らによって書かれたすべての投稿を提供することができます。これは archive.php ファイルだけによる場合と比べて一つの進歩でしょう。
+
 Additionally, you can build specific author.php files for individual author’s by using their author ID or nicename. For example, say John Doe is the head author for a site with many guest authors. You may want all the guest authors’ information to display with author.php but you might build a specific author page with more information for John Doe by creating author-johndoe.php or author-3.php if his author ID is 3.
+
+さらに、作成者IDまたはナイスネーム (nicename) を使用して、個々の作成者のための特定の author.php ファイルを作成することもできます。たとえば、John Doe は多くのゲストの著者がいるサイトのトップの編集者です。もし、すべてのゲストの著者の情報を author.php で表示したいとすれば、著者IDが3ならauthor-johndoe.phpまたはauthor-3.phpを作成してJohn Doeの詳細情報を含む特定の著者ページを作成できます。
 
 Top ↑
 

@@ -33,6 +33,10 @@ WordPressを使用してウェブサイトを構築できる。
 This handbook provides the basic information required to develop WordPress themes, including in-depth coverage of essential template tags and functions.
 このハンドブックはWordPressのテーマ開発に必要となる重要なテンプレートタグと関数を含む基本的な情報を扱っています。
 
-WordPress is a vast subject. Covering every possible tag, function, and scenario is beyond the scope of this handbook. If you need help with specific functions, you can find that information in the code [reference](https://developer.wordpress.org/reference).
+WordPress is a vast subject. Covering every possible tag, function, and scenario is beyond the scope of this handbook. If you need help with specific functions, you can find that information in the code
+WordPressはとても広大な題材です。すべてのタグや関数、動作をカバする事はこのハンドブックの対象外です。 個別の関数についてはコードの中から情報を見つける事ができます。
+[reference](https://developer.wordpress.org/reference).
+[リファレンス](https://developer.wordpress.org/reference).
 
 The purpose of this handbook is to give you a solid foundation for WordPress theme development, to provide step-by-step instruction in building basic themes, and to provide tips and resources useful in furthering your skills.
+このハンドブックの目的は, 基本的なテーマを構築するために役立つ知識とリソースを段階的に提供し、具体的なWordPressのテーマ開発の基礎を提供する事です。
